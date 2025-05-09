@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO WEBSITE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <div class="overlay"></div>
+
+    <header class="glass">
+      <nav>
+        <div class="logo">
+          <span class="name-gradient">TARUN DAS</span>
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><button id="contact-btn">Contact</button></li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero glass">
+        <div class="hero-content">
+          <h1>I AM THE <span class="gradient-text">DARK KNIGHT</span></h1>
+          <p class="subtitle">
+            Coding Vigilante | Cybersecurity Enthusiast | Web Developer| Fueled
+            by caffeine
+          </p>
+          <div class="hero-buttons">
+            <button class="btn-primary">View Work</button>
+            <button class="btn-secondary">Hire Me</button>
+          </div>
+        </div>
+        <div class="profile-image-container">
+          <img
+            src="profile.jpg"
+            alt="Profile"
+            class="profile-image"
+            id="certificate-trigger"
+          />
+          <div class="image-hover-text">View Certificates</div>
+        </div>
+      </section>
+
+      <!-- NEW EDUCATION SECTION -->
+      <section id="education" class="education-section">
+        <h2 class="section-title">
+          EDUCATIONAL <span class="gradient-text">QUALIFICATIONS</span>
+        </h2>
+
+        <div class="education-grid">
+          <!-- Current Degree Card -->
+          <div class="education-card glass edu-card-1 animated-gradient">
+            <div class="edu-icon">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <h3>Currently Pursuing</h3>
+            <h4>Dual Degree (B.Tech + M.Tech)</h4>
+
+            <p>Computer Science & Engineering</p>
+            <div class="edu-timeline">
+              <h4>Enrollment no: SAU/CS/DMTECH/2024/32</h4>
+              <br />
+              <span>year of qualification:2024- 2029</span>
+            </div>
+          </div>
+
+          <!-- Semester GPA Card -->
+          <div class="education-card glass edu-card-2 animated-gradient">
+            <div class="edu-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>1st Semester GPA</h3>
+            <div class="gpa-display">
+              <span class="gpa-value"></span>
+              <span class="gpa-scale">7.70</span>
+            </div>
+            <p>Previous Semester Performance</p>
+          </div>
+
+          <!-- Subjects Learned Card -->
+          <div class="education-card glass edu-card-3 animated-gradient">
+            <div class="edu-icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <h3>Subjects Learned</h3>
+            <ul class="subjects-list">
+              <li>Data Structures & Algorithms</li>
+              <li>Discrete Mathematics</li>
+              <li>Computer Architecture</li>
+              <li>Advanced Calculus</li>
+              <li>Linear Algebra</li>
+              <li>Digital Logic Design</li>
+            </ul>
+          </div>
+
+          <!-- Math Skills Card -->
+          <div class="education-card glass edu-card-4 animated-gradient">
+            <div class="edu-icon">
+              <i class="fas fa-square-root-alt"></i>
+            </div>
+            <h3>Advanced Mathematics</h3>
+            <ul class="subjects-list">
+              <li>Linear Algebra</li>
+              <li>Advanced Calculus</li>
+              <li>Probability & Statistics</li>
+              <li>Numerical Methods</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- UPDATED SKILLS SECTION -->
+      <section id="skills" class="skills-section">
+        <h2 class="section-title">
+          MY <span class="gradient-text">SKILLS</span>
+        </h2>
+        <div class="skills-container">
+          <div class="skill-slider">
+            <div class="skill-track">
+              <!-- Python Card -->
+              <div
+                class="skill-card glass"
+                style="--gradient: linear-gradient(135deg, #3776ab, #ffde57)"
+              >
+                <i class="fab fa-python"></i>
+                <h3>Python Programming</h3>
+                <p>Advanced Python with OOP, Data Structures, and Algorithms</p>
+                <div class="skill-level">
+                  <div class="level-bar" style="width: 90%"></div>
+                </div>
+              </div>
+
+              <!-- Cybersecurity Card (Updated with Bug Bounty) -->
+              <div
+                class="skill-card glass"
+                style="--gradient: linear-gradient(135deg, #6e45e2, #88d3ce)"
+              >
+                <i class="fas fa-shield-alt"></i>
+                <h3>Cybersecurity</h3>
+                <ul class="skill-list">
+                  <li>Bug Bounty Hunting</li>
+                  <li>Ethical Hacking</li>
+                  <li>Network Security</li>
+                  <li>OWASP Top 10</li>
+                </ul>
+                <div class="skill-level">
+                  <div class="level-bar" style="width: 85%"></div>
+                </div>
+              </div>
+
+              <!-- Web Development Card (Updated) -->
+              <div
+                class="skill-card glass"
+                style="--gradient: linear-gradient(135deg, #a18cd1, #fbc2eb)"
+              >
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <ul class="skill-list">
+                  <li>HTML5 & CSS3</li>
+                  <li>JavaScript (ES6+)</li>
+                  <li>React.js</li>
+                  <li>Node.js</li>
+                </ul>
+                <div class="skill-level">
+                  <div class="level-bar" style="width: 88%"></div>
+                </div>
+              </div>
+
+              <!-- Data Structures Card -->
+              <div
+                class="skill-card glass"
+                style="--gradient: linear-gradient(135deg, #ff4d4d, #f9cb28)"
+              >
+                <i class="fas fa-code"></i>
+                <h3>Data Structures & Algorithms</h3>
+                <p>Mastery in problem-solving with optimized solutions</p>
+                <div class="skill-level">
+                  <div class="level-bar" style="width: 90%"></div>
+                </div>
+              </div>
+
+              <!-- C Programming Card -->
+              <div
+                class="skill-card glass"
+                style="--gradient: linear-gradient(135deg, #00599c, #004482)"
+              >
+                <i class="fas fa-c"></i>
+                <h3>C Programming</h3>
+                <p>Low-level system programming and algorithms</p>
+                <div class="skill-level">
+                  <div class="level-bar" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="slider-btn prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="slider-btn next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- UPDATED PROJECTS SECTION -->
+      <section id="projects" class="projects-section">
+        <h2 class="section-title">
+          MY <span class="gradient-text">PROJECTS</span>
+        </h2>
+        <div class="projects-container">
+          <div class="projects-track">
+            <!-- Task Management App -->
+            <div class="project-card glass">
+              <div
+                class="project-image"
+                style="background-image: url('taskapp.jpg')"
+              ></div>
+              <div class="project-content">
+                <h3>Task Management App</h3>
+                <p>
+                  A full-stack application for managing daily tasks with user
+                  authentication and priority scheduling.
+                </p>
+                <div class="project-tech">
+                  <span>Python</span>
+                  <span>Django</span>
+                  <span>JavaScript</span>
+                </div>
+                <a href="#" class="project-link"
+                  >View Project <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Music Player -->
+            <div class="project-card glass">
+              <div
+                class="project-image"
+                style="background-image: url('musicplayer.jpg')"
+              ></div>
+              <div class="project-content">
+                <h3>Music Player</h3>
+                <p>
+                  An interactive music player with playlist management and audio
+                  visualization features.
+                </p>
+                <div class="project-tech">
+                  <span>Python</span>
+                  <span>PyGame</span>
+                  <span>C</span>
+                </div>
+                <a href="#" class="project-link"
+                  >View Project <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Face Recognition -->
+            <div class="project-card glass">
+              <div
+                class="project-image"
+                style="background-image: url('facerecog.jpg')"
+              ></div>
+              <div class="project-content">
+                <h3>Face Recognition System</h3>
+                <p>
+                  Real-time face detection and recognition system using machine
+                  learning algorithms.
+                </p>
+                <div class="project-tech">
+                  <span>Python</span>
+                  <span>OpenCV</span>
+                  <span>TensorFlow</span>
+                </div>
+                <a href="#" class="project-link"
+                  >View Project <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- To Do App in C -->
+            <div class="project-card glass">
+              <div
+                class="project-image"
+                style="background-image: url('taskapp.jpg')"
+              ></div>
+              <div class="project-content">
+                <h3>To Do App in C</h3>
+                <p>
+                  A simple command-line To Do application written in C for task
+                  management.
+                </p>
+                <div class="project-tech">
+                  <span>C</span>
+                  <span>Console</span>
+                </div>
+                <a href="#" class="project-link"
+                  >View Project <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Videoplayer for Different Formats -->
+            <div class="project-card glass">
+              <div
+                class="project-image"
+                style="background-image: url('videoplayer.jpg')"
+              ></div>
+              <div class="project-content">
+                <h3>Videoplayer for Different Formats</h3>
+                <p>
+                  A versatile video player supporting multiple video formats.
+                </p>
+                <div class="project-tech">
+                  <span>JavaScript</span>
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                </div>
+                <a href="#" class="project-link"
+                  >View Project <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <button class="slider-btn prev-project-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="slider-btn next-project-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="about-content glass">
+          <h2 class="section-title">
+            ABOUT <span class="gradient-text">ME</span>
+          </h2>
+          <p>
+            I'm a cybersecurity enthusiast and full-stack developer with a deep
+            passion for solving complex digital puzzles. By day, I architect and
+            build secure, scalable web applications that prioritize user
+            experience and data protection. By night, I dive into the world of
+            ethical hacking, uncovering vulnerabilities and exploring system
+            weaknesses to better understand how to defend them. With a mindset
+            wired for both creation and protection, I thrive at the intersection
+            of development and security—where innovation meets resilience.
+          </p>
+          <p>
+            My journey began in the shadows of Gotham's digital underworld—okay,
+            maybe it was just a dimly lit dorm room with bad Wi-Fi, but the vibe
+            was there. That's where I first realized that with great power (and
+            root access) comes great responsibility. I could have been a villain
+            in the cyber world... but instead, I chose the noble path:
+            protecting systems, debugging code, and occasionally helping friends
+            recover forgotten passwords like a digital superhero. Now, I use my
+            skills to build, break (ethically), and secure—with just the right
+            mix of logic, caffeine, and memes.
+          </p>
+          <div class="stats">
+            <div class="stat">
+              <h3>50+</h3>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat">
+              <h3>100+</h3>
+              <p>Bugs Reported</p>
+            </div>
+            <div class="stat">
+              <h3>10+</h3>
+              <p>Certifications</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Certificates Modal -->
+    <div id="certificates-modal" class="modal">
+      <div class="modal-content glass">
+        <span class="close-modal">&times;</span>
+        <h2>MY <span class="gradient-text">CERTIFICATES</span></h2>
+        <div class="certificates-grid">
+          <div class="certificate">
+            <img src="cert1.jpg" alt="Certificate 1" />
+            <p>Data Structures Mastery</p>
+          </div>
+          <div class="certificate">
+            <img src="cert2.jpg" alt="Certificate 2" />
+            <p>Bug Bounty Hunter</p>
+          </div>
+          <div class="certificate">
+            <img src="cert3.jpg" alt="Certificate 3" />
+            <p>Reverse Engineering Expert</p>
+          </div>
+          <div class="certificate">
+            <img src="cert4.jpg" alt="Certificate 4" />
+            <p>Web Development Professional</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+      <div class="modal-content glass">
+        <span class="close-modal">&times;</span>
+        <h2>CONTACT <span class="gradient-text">ME</span></h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>rahultarun24@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <p>+91-87565678678</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>Gotham City</p>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+        <div class="social-links">
+          <a
+            href="https://github.com/TheCodeCipher"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/tarun-das11/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://instagram.com/yourhandle"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="glass">
+      <!-- New Contact Section -->
+      <div class="footer-contact">
+        <h3>CONNECT WITH ME</h3>
+        <div class="social-links">
+          <a
+            href="https://github.com/TheCodeCipher"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-btn github"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/tarun-das11/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-btn linkedin"
+          >
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+          </a>
+          <a
+            href="https://instagram.com/yourhandle"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-btn instagram"
+          >
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+
+      <p>&copy; 2023 Dark Knight Portfolio. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
