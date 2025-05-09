@@ -4,7 +4,7 @@
 **South Asian University**  
 **Tarun Das**  
 **Integrated Dual Degree BTech-MTech, CSE – Class of 2029**  
-**Registration Number: SAU/CS/DMTECH(CSE)/2024/15**
+**Registration Number: SAU/CS/DMTECH(CSE)/2024/32**
 
 ---
 
